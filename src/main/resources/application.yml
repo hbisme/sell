@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 19871022
+    url: jdbc:mysql://localhost/sell?useSSL=false
+  jpa:
+    show-sql: true
+
+
+server:
+    context-path: /sell
+
+
+#logging:
+#  pattern:
+##    console: "hblog: %d - %msg%n"
+#  level:
+#    com.imooc.LoggerTest: debug
