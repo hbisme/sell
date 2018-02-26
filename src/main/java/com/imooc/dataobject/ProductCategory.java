@@ -1,6 +1,7 @@
 package com.imooc.dataobject;
 
 
+import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 
 import java.util.Date;
@@ -14,6 +15,7 @@ import lombok.Data;
 /**类目 */
 @Entity
 @DynamicUpdate
+@DynamicInsert
 @Data
 public class ProductCategory {
 //    类目id
