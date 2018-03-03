@@ -6,10 +6,13 @@ spring:
     url: jdbc:mysql://localhost/sell?useSSL=false
   jpa:
     show-sql: true
-
+  jackson:
+#    空的元素，json不返回给前端
+    default-property-inclusion: non_null
 
 server:
     context-path: /sell
+
 
 
 #logging:

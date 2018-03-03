@@ -1,6 +1,7 @@
 package com.imooc.service;
 
 import com.imooc.dataobject.ProductInfo;
+import com.imooc.dto.CarDTO;
 
 
 import org.springframework.data.domain.Page;
@@ -23,6 +24,9 @@ public interface ProductService {
     List<ProductInfo> findByProductStatus(Integer status);
 
 //    加库存
+    void increaseStock(List<CarDTO> carDTOList);
 
 //    减库存
+    void decreaseStock(List<CarDTO> carDTOList);
+
 }

@@ -23,7 +23,7 @@ public class OrderMaster {
     @Id
     private String OrderId;
 //    买家姓名
-    private String buyer_name;
+    private String buyerName;
 //    买家手机号
     private String buyerPhone;
 //    买家地址
@@ -35,7 +35,7 @@ public class OrderMaster {
 //    订单状态,默认为新订单
     private Integer orderStatus = OrderStatusEnum.NEW.getCode();
 //    支付状态，默认为未支付
-    private Integer payStatus = PayStatusEnum.NEW.getCode();
+    private Integer payStatus = PayStatusEnum.WAIT.getCode();
 //    创建时间
     private Date createTime;
 //    更新时间
